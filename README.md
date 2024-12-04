@@ -89,7 +89,7 @@ Our three-phase dental analysis system provides comprehensive results for each s
 
 ### 1. Quadrant Detection
 ![Quadrant Detection](demo/Quadrant%20Demo.png)
-*Detection of four dental quadrants with high confidence scores*
+*Detection of four dental quadrants*
 
 ### 2. Tooth Enumeration
 ![Tooth Enumeration](demo/Enumeration%20Demo.png)
@@ -97,7 +97,7 @@ Our three-phase dental analysis system provides comprehensive results for each s
 
 ### 3. Disease Detection
 ![Disease Detection](demo/Disease%20Demo.png)
-*Detection of dental conditions with confidence scores and locations*
+*Detection of dental conditions and locations*
 
 Each phase builds upon the previous one, using transfer learning to improve accuracy:
 - Quadrant detection establishes the basic dental X-ray features
@@ -233,5 +233,3 @@ If you use this project in your research, please cite:
 
 - DENTEX Challenge organizers and dataset providers
 - Detectron2 team at Facebook AI Research
-- Medical imaging community for valuable feedback
-- All contributors and users of this open-source project
