@@ -1,3 +1,21 @@
+```ascii
+ _ 
+ \`*-.    
+  )  _`-. 
+ .  : `. . 
+ : _   '  \ 
+ ; *` _.   `*-._
+ `-.-'          `-.
+   ;       `       `.
+   :.       .        :
+   . \  .   :   .-'   . 
+   '  `+.;  ;  '      :
+   :  '  |    ;       ;-.
+   ; '   : :`-:     _.`* ;
+ .*' /  .*' ; .*`- +'  `*'
+*-*   `*-*   `*-*'
+```
+
 # Dental X-Ray Analysis with Detectron2
 
 A three-phase deep learning system for dental X-ray analysis using Detectron2, developed using the DENTEX Challenge dataset from MICCAI 2023.
@@ -222,10 +240,10 @@ If you use this project in your research, please cite:
 
 ```bibtex
 @article{hamamci2023dentex,
-    title  = "DENTEX: An Abnormal Tooth Detection with Dental Enumeration and Diagnosis Benchmark for Panoramic X-rays",
-    author = "Hamamci, Ibrahim Ethem and Er, Sezgin and Simsar, Enis and others",
-    journal = "arXiv preprint arXiv:2305.19112",
-    year   = "2023"
+    title  = {DENTEX: An Abnormal Tooth Detection with Dental Enumeration and Diagnosis Benchmark for Panoramic X-rays},
+    author = {Hamamci, Ibrahim Ethem and Er, Sezgin and Simsar, Enis and others},
+    journal = {arXiv preprint arXiv:2305.19112},
+    year   = {2023}
 }
 ```
 
