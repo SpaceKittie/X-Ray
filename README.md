@@ -240,10 +240,10 @@ If you use this project in your research, please cite:
 
 ```bibtex
 @article{hamamci2023dentex,
-    title  = {DENTEX: An Abnormal Tooth Detection with Dental Enumeration and Diagnosis Benchmark for Panoramic X-rays},
-    author = {Hamamci, Ibrahim Ethem and Er, Sezgin and Simsar, Enis and others},
-    journal = {arXiv preprint arXiv:2305.19112},
-    year   = {2023}
+    title    = {DENTEX: An Abnormal Tooth Detection with Dental Enumeration and Diagnosis Benchmark for Panoramic X-rays},
+    author   = {Hamamci, Ibrahim Ethem and Er, Sezgin and Simsar, Enis and others},
+    journal  = {arXiv preprint arXiv:2305.19112},
+    year     = {2023}
 }
 ```
 
