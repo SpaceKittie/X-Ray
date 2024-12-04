@@ -241,9 +241,18 @@ If you use this project in your research, please cite:
 ```bibtex
 @article{hamamci2023dentex,
     title    = {DENTEX: An Abnormal Tooth Detection with Dental Enumeration and Diagnosis Benchmark for Panoramic X-rays},
-    author   = {Hamamci, Ibrahim Ethem and Er, Sezgin and Simsar, Enis and others},
+    author   = {Hamamci, Ibrahim Ethem and Er, Sezgin and Simsar, Enis and Yuksel, Atif Emre and Gultekin, Sadullah and Ozdemir, Serife Damla and Yang, Kaiyuan and Li, Hongwei Bran and Pati, Sarthak and Stadlinger, Bernd and others},
     journal  = {arXiv preprint arXiv:2305.19112},
     year     = {2023}
+}
+
+@inproceedings{hamamci2023diffusion,
+    title    = {Diffusion-based hierarchical multi-label object detection to analyze panoramic dental x-rays},
+    author   = {Hamamci, Ibrahim Ethem and Er, Sezgin and Simsar, Enis and Sekuboyina, Anjany and Gundogar, Mustafa and Stadlinger, Bernd and Mehl, Albert and Menze, Bjoern},
+    booktitle= {International Conference on Medical Image Computing and Computer-Assisted Intervention},
+    pages    = {389--399},
+    year     = {2023},
+    organization = {Springer}
 }
 ```
 
