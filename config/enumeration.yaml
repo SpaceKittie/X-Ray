@@ -1,0 +1,19 @@
+_BASE_: "quadrant.yaml"
+MODEL:
+  ROI_HEADS:
+    NUM_CLASSES: 32  # 8 teeth per quadrant
+    SCORE_THRESH_TEST: 0.5  # Lower threshold as teeth are harder to detect
+  WEIGHTS: "output/quadrant/model_final.pth"  # Initialize from quadrant model
+SOLVER:
+  BASE_LR: 0.00001
+  MAX_ITER: 1500  # More iterations for finer details
+  STEPS: [1000, 1300]  # Learning rate decay
+  GAMMA: 0.1  # Learning rate decay factor
+  WARMUP_ITERS: 200  # Longer warmup for transfer learning
+DATASETS:
+  TRAIN: ("enumeration_train",)
+  TEST: ("enumeration_val",)
+INPUT:
+  # Larger sizes for better tooth detection
+  MIN_SIZE_TRAIN: (1024, 1280, 1536)
+  MAX_SIZE_TRAIN: 2048

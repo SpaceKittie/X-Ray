@@ -1,0 +1,14 @@
+data:
+  root: training_data/quadrant
+  images:
+    train: training_data/quadrant/xrays/train
+    val: training_data/quadrant/xrays/val
+  annotations:
+    train: training_data/quadrant/train_quadrant.json
+    val: training_data/quadrant/val_quadrant.json
+
+output:
+  root: output
+  quadrant: output/quadrant_mask
+  enumeration: output/enumeration
+  disease: output/disease

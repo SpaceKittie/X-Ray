@@ -1,0 +1,27 @@
+_BASE_: "enumeration.yaml"
+MODEL:
+  ROI_HEADS:
+    NUM_CLASSES: 6  # [Caries, Periapical Lesion, Root Canal Treatment, Deep Caries, Impacted, Filling]
+    SCORE_THRESH_TEST: 0.3  # Lower threshold as diseases can be subtle
+  WEIGHTS: "output/enumeration/model_final.pth"  # Initialize from enumeration model
+  PIXEL_MEAN: [128.0, 128.0, 128.0]  # Adjusted for X-ray images
+  PIXEL_STD: [64.0, 64.0, 64.0]
+SOLVER:
+  BASE_LR: 0.000005  # Lower learning rate for fine details
+  MAX_ITER: 2000  # More iterations for complex patterns
+  STEPS: [1200, 1600]  # Learning rate decay points
+  GAMMA: 0.1
+  WARMUP_ITERS: 300  # Longer warmup
+DATASETS:
+  TRAIN: ("disease_train",)
+  TEST: ("disease_val",)
+INPUT:
+  # Higher resolution for disease detection
+  MIN_SIZE_TRAIN: (1280, 1536, 1792)
+  MAX_SIZE_TRAIN: 2048
+  # Stronger augmentation for disease patterns
+  RANDOM_FLIP: "horizontal"
+  BRIGHTNESS: 1.5
+  CONTRAST: 1.5
+  SATURATION: 1.5
+  HUE: 0.1
